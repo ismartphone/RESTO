@@ -1,0 +1,739 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "initial", sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(254, 254, 254);
+  font-family: Inika;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+header img {
+  width: 614px;
+  height: 83px;
+  flex-shrink: 0;
+  aspect-ratio: 614/83;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+header ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: Inika;
+  font-size: 32px;
+}
+header ul a:hover {
+  color: #92140C;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+main {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+main .bg {
+  width: 100%;
+}
+main .bestburger {
+  display: flex;
+  flex-direction: column;
+}
+main .bestburger h1 {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  color: #FFF;
+  text-align: center;
+  font-family: Inika;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .bestburger .soustitre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+main .bestburger .soustitre h2 {
+  color: #FFF;
+  font-family: Inika;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .burg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .burg .premburg {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+main .burg .premburg .description {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 60px;
+  margin-right: 100px;
+}
+main .burg .premburg .description h3 {
+  color: #FFF;
+  font-family: Inika;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .burg .premburg .description h3 .trouge {
+  color: #92140C;
+  text-align: center;
+  font-family: Inika;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .burg .premburg .description p {
+  color: #ffffff;
+  font-family: Inika;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .burg .premburg .description button {
+  border-radius: 10px;
+  background: #92140C;
+  width: 148.593px;
+  height: 33.697px;
+  flex-shrink: 0;
+  color: #FFF;
+}
+main .burg .premburg .description button:hover {
+  background-color: #ffc918;
+  transition: background-color 0.3s ease, transform 0.2s;
+  transform: scale(1.1);
+}
+main .deuxburg {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+main .deuxburg .description {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 60px;
+  margin-right: 100px;
+}
+main .deuxburg .description h3 {
+  color: #FFF;
+  font-family: Inika;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .deuxburg .description h3 .tbleu {
+  color: #1E7BE1;
+  text-align: center;
+  font-family: Inika;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .deuxburg .description p {
+  color: #ffffff;
+  font-family: Inika;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .deuxburg .description button {
+  border-radius: 10px;
+  background: #1E7BE1;
+  width: 148.593px;
+  height: 33.697px;
+  flex-shrink: 0;
+  color: #FFF;
+}
+main .deuxburg .description button:hover {
+  background-color: #ffc918;
+  transition: background-color 0.3s ease, transform 0.2s;
+  transform: scale(1.1);
+}
+main .resto {
+  margin-top: 50px;
+}
+main .resto h2 {
+  color: #FFF;
+  font-family: Inika;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+main .resto .ranger {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+main .resto .ranger .annecy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .resto .ranger .annecy h3 {
+  color: #FFF;
+  font-family: Inika;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #92140C;
+}
+main .resto .ranger .annecy .leg {
+  color: #FFF;
+  text-align: center;
+  font-family: Inika;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .resto .ranger .annecy p {
+  color: #ffffff;
+  font-family: Inika;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+main .resto .ranger .annecy button {
+  border-radius: 10px;
+  background: #92140C;
+  width: 148.593px;
+  height: 33.697px;
+  flex-shrink: 0;
+  color: #FFF;
+}
+main .resto .ranger .annecy button:hover {
+  background-color: #ffc918;
+  transition: background-color 0.3s ease, transform 0.2s;
+  transform: scale(1.1);
+}
+main .resto .ranger .chamonix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .resto .ranger .chamonix h3 {
+  color: #FFF;
+  font-family: Inika;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #ffffff;
+}
+main .resto .ranger .chamonix .leg {
+  color: #FFF;
+  text-align: center;
+  font-family: Inika;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .resto .ranger .chamonix p {
+  color: #ffffff;
+  font-family: Inika;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+main .resto .ranger .chamonix button {
+  border-radius: 10px;
+  background: #ffffff;
+  width: 148.593px;
+  height: 33.697px;
+  flex-shrink: 0;
+  color: #000000;
+}
+main .resto .ranger .chamonix button:hover {
+  background-color: #ffc918;
+  transition: background-color 0.3s ease, transform 0.2s;
+  transform: scale(1.1);
+}
+main .resto .ranger .cluse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .resto .ranger .cluse h3 {
+  color: #FFF;
+  font-family: Inika;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #1E7BE1;
+}
+main .resto .ranger .cluse .leg {
+  color: #FFF;
+  text-align: center;
+  font-family: Inika;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .resto .ranger .cluse p {
+  color: #ffffff;
+  font-family: Inika;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+main .resto .ranger .cluse button {
+  border-radius: 10px;
+  background: #1E7BE1;
+  width: 148.593px;
+  height: 33.697px;
+  flex-shrink: 0;
+  color: #FFF;
+}
+main .resto .ranger .cluse button:hover {
+  background-color: #ffc918;
+  transition: background-color 0.3s ease, transform 0.2s;
+  transform: scale(1.1);
+}
+
+.transitionn {
+  margin-top: 200px;
+}
+.transitionn img {
+  margin-left: -100px;
+  width: calc(100% + 200px);
+}
+
+.contact-content {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.contact-content h2 {
+  color: #FFF;
+  font-family: Inika;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.contact-content button {
+  border-radius: 10px;
+  background: #ffffff;
+  width: 148.593px;
+  height: 33.697px;
+  flex-shrink: 0;
+  color: #000000;
+}
+.contact-content button:hover {
+  background-color: #ffc918;
+  transition: background-color 0.3s ease, transform 0.2s;
+  transform: scale(1.1);
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: -100px;
+  width: calc(100% + 200px);
+}
+
+.contact .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  margin: 55px 150px 60px 150px;
+  font-family: Inika;
+}
+footer .cont .tact {
+  font-size: 32px;
+  font-weight: normal;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer .cont .mail {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+}
+footer .cont .mail:hover {
+  text-decoration: underline;
+  color: white;
+}
+footer .infos .forma {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+footer .infos .liens {
+  list-style: none;
+}
+footer .infos .liens .faq {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+footer .infos .liens .faq:hover {
+  text-decoration: underline;
+}
+footer .infos .liens .jobs {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+footer .infos .liens .jobs:hover {
+  text-decoration: underline;
+}
+footer .infos .liens .poli {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+}
+footer .infos .liens .poli:hover {
+  text-decoration: underline;
+}
+footer .follow .fol {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
+}
+footer .follow .social {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  align-items: end;
+  color: #FFF;
+}
+footer .follow .social .insta {
+  transition: transform 0.3s ease;
+}
+footer .follow .social .insta:hover {
+  transform: scale(1.1);
+}
+footer .follow .social .face {
+  transition: transform 0.3s ease;
+}
+footer .follow .social .face:hover {
+  transform: scale(1.1);
+}
+footer .follow .social .in {
+  transition: transform 0.3s ease;
+}
+footer .follow .social .in:hover {
+  transform: scale(1.1);
+}
+footer .follow .social .tik {
+  transition: transform 0.3s ease;
+}
+footer .follow .social .tik:hover {
+  transform: scale(1.1);
+}
+footer .rese {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+  margin-top: 30px;
+}
+
+/* ===========================
+   🧩 Responsive Design
+   =========================== */
+/* --- TABLETTE --- */
+@media screen and (max-width: 1024px) {
+  header ul {
+    gap: 80px;
+  }
+  header ul a {
+    font-size: 24px;
+  }
+  header ul img {
+    width: 400px;
+    height: auto;
+  }
+  main {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  main .bestburger h1 {
+    font-size: 90px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  main .burg .premburg, main .burg .deuxburg {
+    flex-direction: column;
+    text-align: center;
+  }
+  main .burg .premburg .description, main .burg .deuxburg .description {
+    margin: 40px 0;
+    align-items: center;
+  }
+  main .burg .premburg .description p, main .burg .deuxburg .description p {
+    max-width: 80%;
+  }
+  main .burg .premburg img, main .burg .deuxburg img {
+    width: 80%;
+    height: auto;
+  }
+  main .resto h2 {
+    font-size: 60px;
+  }
+  main .resto .ranger {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  footer {
+    margin: 40px 50px;
+  }
+  footer .infos .forma, footer .infos .fol, footer .follow .forma, footer .follow .fol {
+    font-size: 26px;
+  }
+  footer .infos .liens, footer .infos .social, footer .follow .liens, footer .follow .social {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* --- MOBILE --- */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.burger-menu .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.burger-menu.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+.burger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    position: relative;
+  }
+  header img {
+    width: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .burger-menu {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  header ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 30px 0;
+    border-top: 1px solid white;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  header ul.active {
+    display: flex;
+  }
+  main {
+    margin: 0 20px;
+  }
+  main .bestburger h1 {
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  main .soustitre h2 {
+    font-size: 40px;
+  }
+  main .burg .premburg, main .burg .deuxburg {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .burg .premburg .description, main .burg .deuxburg .description {
+    margin: 20px 0;
+    text-align: center;
+  }
+  main .burg .premburg .description h3, main .burg .deuxburg .description h3 {
+    font-size: 40px;
+  }
+  main .burg .premburg .description p, main .burg .deuxburg .description p {
+    font-size: 14px;
+  }
+  main .burg .premburg .description button, main .burg .deuxburg .description button {
+    width: 120px;
+    height: 30px;
+  }
+  main .burg .premburg img, main .burg .deuxburg img {
+    width: 90%;
+  }
+  main .resto h2 {
+    font-size: 50px;
+  }
+  main .resto .ranger {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .contact {
+    height: auto;
+  }
+  main .contact .contact-content {
+    gap: 40px;
+  }
+  main .contact .contact-content h2 {
+    font-size: 40px;
+  }
+  main .contact .contact-content button {
+    width: 120px;
+    height: 35px;
+  }
+  footer {
+    margin: 30px;
+    text-align: center;
+  }
+  footer .cont .tact, footer .cont .forma, footer .cont .fol, footer .infos .tact, footer .infos .forma, footer .infos .fol, footer .follow .tact, footer .follow .forma, footer .follow .fol {
+    font-size: 24px;
+  }
+  footer .cont .liens, footer .cont .social, footer .infos .liens, footer .infos .social, footer .follow .liens, footer .follow .social {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .cont .mail, footer .cont .faq, footer .cont .jobs, footer .cont .poli, footer .cont .rese, footer .infos .mail, footer .infos .faq, footer .infos .jobs, footer .infos .poli, footer .infos .rese, footer .follow .mail, footer .follow .faq, footer .follow .jobs, footer .follow .poli, footer .follow .rese {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
