@@ -1,0 +1,925 @@
+@import "variables";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+  
+.back-to-top:hover {
+    background-color: #555;
+}
+  
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Inika", serif;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.navi{
+    position: relative;
+
+    .res{
+        display: none;
+    }
+
+    .mb{
+        display: flex;
+        justify-content: center;
+        font-size: 100px;
+        display: none;
+    }
+}
+
+.gation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+li{
+    font-size: 32px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.accueil:hover{
+    text-decoration: underline;
+}
+
+.menu:hover{
+    text-decoration: underline;
+}
+
+.histoire:hover{
+    text-decoration: underline;
+}
+
+.frites{
+    width: 100%;
+    height: 900px;
+}
+
+.choix{
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    align-items: end;
+    h1{
+        font-size: 48px;
+        font-weight: bold;
+        background-color: #92140C;
+        display: inline-block;
+        margin-left: 90px;
+        padding: 30px;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .liens{
+        margin-right: 90px;
+
+        .burger{
+            list-style: none;
+            display: flex;
+            gap: 33px;
+
+            .signature{
+                @include AnimationBurgers ();
+            }
+
+            .signature:hover{
+                transform: scale(1.2);
+            }
+
+            .simple{
+                @include AnimationBurgers ();
+            }
+
+            .simple:hover{
+                transform: scale(1.2); 
+            }
+
+            .poulet{
+                @include AnimationBurgers ();
+            }
+
+            .poulet:hover{
+                transform: scale(1.2); 
+            }
+
+            .boisson{
+                @include AnimationBurgers ();
+            }
+
+            .boisson:hover{
+                transform: scale(1.2);
+            }
+        }  
+    }
+}
+
+.titre{
+    @include Prix ();
+    justify-content: center;
+
+    .sous1{
+        @include TitresBurgers ();
+    }
+
+    .new{
+        @include SousTitres ();
+    }
+}
+
+.the{
+    margin: 55px 150px 60px 150px;
+
+    .sout1{
+        @include SousTitres ();
+    }
+
+    .chicken{
+        @include Menus ();
+
+        .prixthe{
+            @include Prix ();
+        }
+    }
+}
+
+.beef{
+    margin: 55px 150px 60px 150px;
+
+    .sout2{
+        @include SousTitres ();
+    }
+
+    .flette{
+        @include Menus ();
+        
+        .prixla{
+            @include Prix ();
+        }
+    }
+}
+
+.sous2{
+    display: flex;
+    @include TitresBurgers ();
+    justify-content: center;  
+}
+
+.cheese{
+    margin: 55px 150px 60px 150px;
+
+    .sout3{
+        @include SousTitres (); 
+    }
+
+    .gin{
+        @include Menus ();
+
+        .prixchee{
+            @include Prix (); 
+        }
+    }
+}
+
+.ham{
+    margin: 55px 150px 60px 150px;
+
+    .sout4{
+        @include SousTitres ();
+    }
+
+    .hambur{
+        @include Menus (); 
+        
+        .prixham{
+            @include Prix (); 
+        }
+    }
+}
+
+.bacon{
+    margin: 55px 150px 60px 150px;
+
+    .sout5{
+        @include SousTitres (); 
+    }
+
+    .ba{
+        @include Menus ();
+        
+        .prixbac{
+            @include Prix ();
+        }
+    }
+}
+
+.bacche{
+    margin: 55px 150px 60px 150px;
+    
+    .sout6{
+        @include SousTitres ();
+    }
+
+    .bachee{
+        @include Menus ();
+
+        .prixbc{
+            @include Prix ();
+        }
+    }
+}
+
+.sous3{
+    display: flex;
+    @include TitresBurgers ();
+    justify-content: center; 
+}
+
+.best{
+    margin: 55px 150px 60px 150px;
+    
+    .sout7{
+        @include SousTitres (); 
+    }
+
+    .bbc{
+        @include Menus (); 
+
+        .prixbest{
+            @include Prix (); 
+        }
+    }
+}
+
+.chiba{
+    margin: 55px 150px 60px 150px;
+    
+    .sout8{
+        @include SousTitres ();  
+    }
+
+    .cb{
+        @include Menus ();
+
+        .prixcb{
+            @include Prix (); 
+        }
+    }
+}
+
+.spicy{
+    margin: 55px 150px 60px 150px;
+    
+    .sout9{
+        @include SousTitres ();
+    }
+
+    .chispi{
+        @include Menus (); 
+
+        .prixspi{
+            @include Prix ();  
+        }
+    }
+}
+
+.rustique{
+    margin: 55px 150px 60px 150px;
+    
+    .sout10{
+        @include SousTitres (); 
+    }
+
+    .rust{
+        @include Menus (); 
+
+        .prixrust{
+            @include Prix (); 
+        }
+    }
+}
+
+.bois{
+    margin: 55px 150px 60px 150px;
+    
+    .sous4{
+        display: flex;
+        @include TitresBurgers ();
+        justify-content: center;  
+    }
+
+    .boisfri{
+        display: flex;
+        margin-top: 37px;
+
+        .potato{
+            width: 50%;
+
+            .line1{
+                @include SousTitres ();
+                @include FritesBois ();
+
+                .prixfri{
+                    @include Prix ();
+                    font-size: 16px;
+                }
+            }
+
+            .line2{
+                @include SousTitres ();
+                @include FritesBois ();
+
+                .prixpot{
+                    @include Prix ();
+                    font-size: 16px;  
+                }
+            }
+
+            .line3{
+                @include SousTitres ();
+                @include FritesBois ();
+
+                .prixfribac{
+                    @include Prix ();
+                    font-size: 16px;  
+                }
+            }
+
+            .line4{
+                @include SousTitres ();
+                @include FritesBois ();
+                
+                .prixcrispy{
+                    @include Prix ();
+                    font-size: 16px;   
+                }
+            }
+        }
+
+        .liquide{
+
+            .coca{
+                @include SousTitres ();
+                @include FritesBois ();
+                margin-left: 30px;
+
+                .prixcoca{
+                    @include Prix ();
+                    font-size: 16px;  
+                }
+            }
+
+            .sprite{
+                @include SousTitres ();
+                @include FritesBois ();
+                margin-left: 30px;
+
+                .prixspri{
+                    @include Prix ();
+                    font-size: 16px;
+                }
+            }
+
+            .orangina{
+                @include SousTitres ();
+                @include FritesBois ();
+                margin-left: 30px;
+                
+                .prixoran{
+                    @include Prix ();
+                    font-size: 16px; 
+                }
+            }
+
+            .minute{
+                @include SousTitres ();
+                @include FritesBois ();
+                margin-left: 30px;
+                
+                .prixminute{
+                    @include Prix ();
+                    font-size: 16px;  
+                }
+            }
+
+            .eau{
+                @include SousTitres ();
+                @include FritesBois ();
+                margin-left: 30px;
+                
+                .prixo{
+                    @include Prix ();
+                    font-size: 16px;  
+                }
+            }
+        }
+        
+    }
+}
+
+.fla{
+    width: 100%;
+}
+
+footer{
+    margin: 55px 150px 60px 150px;
+
+   .cont{
+
+       .tact{
+        @include SousTitres ();
+         display: flex;
+         justify-content: center;
+         margin-bottom: 10px;
+       }
+
+       .mail{
+         @include Footer ();
+       }
+
+       .mail:hover{
+         text-decoration: underline;
+         color: white;
+       }
+   }
+
+   .infos{
+
+        .forma{
+            display: flex;
+            justify-content: center;
+            @include SousTitres ();
+            margin-top: 40px;
+            margin-bottom: 10px;        
+        }
+
+        .liens{
+            list-style: none;
+       
+
+            .faq{
+                @include Footer ();
+                margin-bottom: 10px;
+            }
+
+            .faq:hover{
+                text-decoration: underline;
+            }
+
+            .jobs{
+                @include Footer ();
+                margin-bottom: 10px; 
+            }
+
+            .jobs:hover{
+                text-decoration: underline;
+            }
+
+            .poli{
+                @include Footer (); 
+            }
+
+            .poli:hover{
+                text-decoration: underline; 
+            }
+
+            
+        }
+          
+    }
+
+    .follow{
+        .fol{
+            display: flex;
+            justify-content: center;
+            @include SousTitres ();
+            margin-top: 40px; 
+        }
+
+        .social{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            align-items: end;
+
+            .insta{
+                transition: transform 0.3s ease; 
+            }
+            
+            .insta:hover{
+                transform: scale(1.1);
+            }
+
+            .face{
+                transition: transform 0.3s ease;  
+            }
+
+            .face:hover{
+                transform: scale(1.1); 
+            }
+
+            .in{
+                transition: transform 0.3s ease; 
+            }
+
+            .in:hover{
+                transform: scale(1.1);  
+            }
+
+            .tik{
+                transition: transform 0.3s ease;  
+            }
+
+            .tik:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .rese{
+        @include Footer ();
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .frites{
+        height: 500px;
+    }
+
+    .choix{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+        h1{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .liens{
+            margin: 0;
+        }
+    }
+
+    .sout1{
+       @include TabMenus ();
+    }
+
+    .chicken{
+       @include TabIng ();
+
+        .point1{
+            display: none;
+        }
+    }
+
+    .sout2{
+        @include TabMenus ();
+    }
+
+    .flette{
+        @include TabIng ();
+        
+        .point2{
+            display: none; 
+        }
+    }
+
+    .sout3{
+        @include TabMenus (); 
+    }
+
+    .gin{
+        @include TabIng ();
+        
+        .point3{
+            display: none; 
+        }
+    }
+
+    .sout4{
+        @include TabMenus ();   
+    }
+
+    .hambur{
+        @include TabIng ();
+
+        .point4{
+            display: none; 
+        }
+    }
+
+    .sout5{
+        @include TabMenus (); 
+    }
+
+    .ba{
+        @include TabIng ();
+        
+        .point5{
+            display: none; 
+        }
+    }
+
+    .sout6{
+        @include TabMenus (); 
+    }
+
+    .bachee{
+        @include TabIng ();
+        
+        .point6{
+            display: none; 
+        }
+    }
+
+    .sout7{
+        @include TabMenus ();   
+    }
+
+    .bbc{
+        @include TabIng ();
+        
+        .point7{
+            display: none;
+        }
+    }
+
+    .sout8{
+        @include TabMenus ();  
+    }
+
+    .cb{
+        @include TabIng ();
+        
+        .point8{
+            display: none;
+        }
+    }
+
+    .sout9{
+        @include TabMenus ();   
+    }
+
+    .chispi{
+        @include TabIng ();
+
+        .point9{
+            display: none;
+        }
+    }
+
+    .sout10{
+        @include TabMenus (); 
+    }
+
+    .rust{
+        @include TabIng ();
+        
+        .point10{
+            display: none;
+        }
+    }
+
+    .bois{
+        .boisfri{
+            flex-direction: column;
+    
+            .potato{
+                width: 100%;
+    
+                .line1{
+                    justify-content: center;
+
+                    .pointfri{
+                        display: none;
+                    }
+                }
+    
+                .line2{
+                    justify-content: center;
+                    
+                    .pointpo{
+                        display: none;  
+                    }
+                }
+    
+                .line3{
+                    justify-content: center;
+            
+                    .pointbac{
+                        display: none;  
+                    }
+                }
+
+                .line4{
+                    justify-content: center;
+                    
+                    .pointcris{
+                        display: none;
+                    }
+                }
+            }
+    
+            .tr{
+                display: none;
+            }
+
+            .liquide{
+                .coca{
+                    justify-content: center;
+
+                    .pointco{
+                        display: none;
+                    }
+                }
+
+                .sprite{
+                    justify-content: center;
+
+                    .pointspri{
+                        display: none;
+                    }
+                }
+
+                .orangina{
+                    justify-content: center;
+
+                    .pointoran{
+                        display: none;
+                    }
+                }
+
+                .minute{
+                    justify-content: center;
+
+                    .pointmin{
+                        display: none;
+                    }
+                }
+
+                .eau{
+                    justify-content: center;
+
+                    .pointo{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .follow{
+
+            .social{
+                gap: 60px;
+            }
+        }
+    }
+}  
+
+@media screen and (max-width: 768px){
+    
+    header{
+
+        .logo{
+
+            margin-bottom: 0;
+
+            .lbb{
+                width: 500px;
+            }  
+        }
+    
+        .navi{
+            .res:checked + .mb + .gation{
+                display: flex;
+            }
+            .mb{
+                display: flex;
+                justify-content: center;
+            }
+    
+            .gation{
+                display: none;
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        .frites{
+            height: 400px;
+        }
+
+    }
+
+    .choix{
+        margin-top: 50px;
+
+        .liens{
+
+            .burger{
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    }
+
+    .sign{
+
+        .the{
+          @include TelRes ();
+        }
+
+        .beef{
+            @include TelRes ();  
+        }
+        
+    }
+
+    .ori{
+        .cheese{
+            @include TelRes ();
+        }
+
+        .ham{
+            @include TelRes ();
+        }
+
+        .bacon{
+            @include TelRes ();
+        }
+
+        .bacche{
+            @include TelRes ();
+        }
+    }
+
+    .poule{
+        .best{
+            @include TelRes ();
+        }
+
+        .chiba{
+            @include TelRes ();
+        }
+
+        .spicy{
+            @include TelRes ();
+        }
+
+        .rustique{
+            @include TelRes ();
+        }
+    }
+
+    footer{
+        .follow{
+            .social{
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+        }
+    }
+
+
+
+}
