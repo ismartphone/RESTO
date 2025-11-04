@@ -26,6 +26,10 @@ header img {
   flex-shrink: 0;
   aspect-ratio: 614/83;
 }
+header img:hover {
+  transition: transform 0.8s;
+  transform: scale(1.1);
+}
 header ul {
   display: flex;
   align-items: center;

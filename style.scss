@@ -16,6 +16,10 @@ header{
             flex-shrink: 0;
             aspect-ratio: 614/83;
         }
+        img:hover {
+            transition: transform 0.8s;
+            transform: scale(1.1);
+        }
         ul{
             @include menu;
             gap: 200px;
@@ -30,6 +34,7 @@ header{
                 }        
             }
 }
+
 
 main{
     margin-left: 100px;
