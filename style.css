@@ -1,9 +1,12 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   font-family: "initial", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -51,6 +54,24 @@ header ul a:hover {
   color: #92140C;
   transform: scale(1.1);
   transition: transform 0.2s;
+}
+
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.top:hover {
+  background-color: #555;
+  transition: background-color 0.3s ease, transform 0.5s;
+  transform: scale(1.5);
 }
 
 main {
@@ -554,10 +575,6 @@ footer .rese {
   margin-top: 30px;
 }
 
-/* ===========================
-   🧩 Responsive Design
-   =========================== */
-/* --- TABLETTE --- */
 @media screen and (max-width: 1024px) {
   header ul {
     gap: 80px;
@@ -611,7 +628,6 @@ footer .rese {
     align-items: center;
   }
 }
-/* --- MOBILE --- */
 .burger-menu {
   display: none;
   flex-direction: column;

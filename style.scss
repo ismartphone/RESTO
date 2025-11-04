@@ -1,6 +1,9 @@
 @import "./variable";
 @import "./variable2";
 
+html{
+  scroll-behavior: smooth;
+}
 
 body{
     background-color: $fondBlockPrincipale;
@@ -35,6 +38,25 @@ header{
             }
 }
 
+
+
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.top:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease, transform 0.5s;
+    transform: scale(1.5);
+}
 
 main{
     margin-left: 100px;
@@ -399,11 +421,7 @@ footer{
     }
 }
 
-/* ===========================
-   🧩 Responsive Design
-   =========================== */
-
-/* --- TABLETTE --- */
+//tablette
 @media screen and (max-width: 1024px) {
   header {
     ul {
@@ -474,7 +492,7 @@ footer{
   }
 }
 
-/* --- MOBILE --- */
+//tel
 
 .burger-menu {
   display: none;
