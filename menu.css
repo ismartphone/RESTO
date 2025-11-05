@@ -1,62 +1,9 @@
-* {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-  font-family: "initial", sans-serif;
-}
-
+/* ===== VARIABLES ===== */
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: rgb(0, 0, 0);
-  color: rgb(254, 254, 254);
-  font-family: Inika;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-header img {
-  width: 614px;
-  height: 83px;
-  flex-shrink: 0;
-  aspect-ratio: 614/83;
-}
-header img:hover {
-  transition: transform 0.8s;
-  transform: scale(1.1);
-}
-header ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  gap: 200px;
-}
-header ul a {
-  text-decoration: none;
-  color: white;
-  font-weight: normal;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-family: Inika;
-  font-size: 32px;
-}
-header ul a:hover {
-  color: #92140C;
-  transform: scale(1.1);
-  transition: transform 0.2s;
-}
-
-.top {
+.back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -66,396 +13,520 @@ header ul a:hover {
   font-size: 24px;
   padding: 10px 15px;
   border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
-.top:hover {
+.back-to-top:hover {
   background-color: #555;
-  transition: background-color 0.3s ease, transform 0.5s;
-  transform: scale(1.5);
 }
 
-main {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-main .bg {
-  width: 100%;
-}
-main .bestburger {
-  display: flex;
-  flex-direction: column;
-}
-main .bestburger h1 {
-  margin-top: 250px;
-  margin-bottom: 250px;
-  color: #FFF;
-  text-align: center;
-  font-family: Inika;
-  font-size: 150px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-main .bestburger .soustitre {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 100px;
-}
-main .bestburger .soustitre h2 {
-  color: #FFF;
-  font-family: Inika;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-main .burg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .burg .premburg {
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
-}
-main .burg .premburg .description {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-left: 60px;
-  margin-right: 100px;
-}
-main .burg .premburg .description h3 {
-  color: #FFF;
-  font-family: Inika;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-main .burg .premburg .description h3 .trouge {
-  color: #92140C;
-  text-align: center;
-  font-family: Inika;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-main .burg .premburg .description p {
-  color: #ffffff;
-  font-family: Inika;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-main .burg .premburg .description button {
-  border-radius: 10px;
-  background: #92140C;
-  width: 148.593px;
-  height: 33.697px;
-  flex-shrink: 0;
-  color: #FFF;
-}
-main .burg .premburg .description button:hover {
-  background-color: #ffc918;
-  transition: background-color 0.3s ease, transform 0.2s;
-  transform: scale(1.1);
-}
-main .deuxburg {
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
-}
-main .deuxburg .description {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-left: 60px;
-  margin-right: 100px;
-}
-main .deuxburg .description h3 {
-  color: #FFF;
-  font-family: Inika;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-main .deuxburg .description h3 .tbleu {
-  color: #1E7BE1;
-  text-align: center;
-  font-family: Inika;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-main .deuxburg .description p {
-  color: #ffffff;
-  font-family: Inika;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-main .deuxburg .description button {
-  border-radius: 10px;
-  background: #1E7BE1;
-  width: 148.593px;
-  height: 33.697px;
-  flex-shrink: 0;
-  color: #FFF;
-}
-main .deuxburg .description button:hover {
-  background-color: #ffc918;
-  transition: background-color 0.3s ease, transform 0.2s;
-  transform: scale(1.1);
-}
-main .resto {
-  margin-top: 50px;
-}
-main .resto h2 {
-  color: #FFF;
-  font-family: Inika;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-}
-main .resto .ranger {
-  display: flex;
-  margin-top: 50px;
-  align-items: center;
-  gap: 40px;
-  justify-content: center;
-}
-main .resto .ranger .annecy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-main .resto .ranger .annecy h3 {
-  color: #FFF;
-  font-family: Inika;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #92140C;
-}
-main .resto .ranger .annecy .leg {
-  color: #FFF;
-  text-align: center;
-  font-family: Inika;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-main .resto .ranger .annecy p {
-  color: #ffffff;
-  font-family: Inika;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: center;
-}
-main .resto .ranger .annecy button {
-  border-radius: 10px;
-  background: #92140C;
-  width: 148.593px;
-  height: 33.697px;
-  flex-shrink: 0;
-  color: #FFF;
-}
-main .resto .ranger .annecy button:hover {
-  background-color: #ffc918;
-  transition: background-color 0.3s ease, transform 0.2s;
-  transform: scale(1.1);
-}
-main .resto .ranger .chamonix {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-main .resto .ranger .chamonix h3 {
-  color: #FFF;
-  font-family: Inika;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #ffffff;
-}
-main .resto .ranger .chamonix .leg {
-  color: #FFF;
-  text-align: center;
-  font-family: Inika;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-main .resto .ranger .chamonix p {
-  color: #ffffff;
-  font-family: Inika;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: center;
-}
-main .resto .ranger .chamonix button {
-  border-radius: 10px;
-  background: #ffffff;
-  width: 148.593px;
-  height: 33.697px;
-  flex-shrink: 0;
-  color: #000000;
-}
-main .resto .ranger .chamonix button:hover {
-  background-color: #ffc918;
-  transition: background-color 0.3s ease, transform 0.2s;
-  transform: scale(1.1);
-}
-main .resto .ranger .cluse {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-main .resto .ranger .cluse h3 {
-  color: #FFF;
-  font-family: Inika;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #1E7BE1;
-}
-main .resto .ranger .cluse .leg {
-  color: #FFF;
-  text-align: center;
-  font-family: Inika;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-main .resto .ranger .cluse p {
-  color: #ffffff;
-  font-family: Inika;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: center;
-}
-main .resto .ranger .cluse button {
-  border-radius: 10px;
-  background: #1E7BE1;
-  width: 148.593px;
-  height: 33.697px;
-  flex-shrink: 0;
-  color: #FFF;
-}
-main .resto .ranger .cluse button:hover {
-  background-color: #ffc918;
-  transition: background-color 0.3s ease, transform 0.2s;
-  transform: scale(1.1);
-}
-
-.transitionn {
-  margin-top: 200px;
-}
-.transitionn img {
-  margin-left: -100px;
-  width: calc(100% + 200px);
-}
-
-.contact-content {
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 80px;
-}
-.contact-content h2 {
-  color: #FFF;
-  font-family: Inika;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.contact-content button {
-  border-radius: 10px;
-  background: #ffffff;
-  width: 148.593px;
-  height: 33.697px;
-  flex-shrink: 0;
-  color: #000000;
-}
-.contact-content button:hover {
-  background-color: #ffc918;
-  transition: background-color 0.3s ease, transform 0.2s;
-  transform: scale(1.1);
-}
-
-.contact {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-left: -100px;
-  width: calc(100% + 200px);
-}
-
-.contact .bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 0;
-  opacity: 0.8;
-}
-
-.contact-content {
-  position: relative;
-  z-index: 1;
+* {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Inika", serif;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.navi {
+  position: relative;
+}
+.navi .res {
+  display: none;
+}
+.navi .mb {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  display: none;
+}
+
+.gation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+li {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.accueil:hover {
+  text-decoration: underline;
+}
+
+.menu:hover {
+  text-decoration: underline;
+}
+
+.histoire:hover {
+  text-decoration: underline;
+}
+
+.frites {
+  width: 100%;
+  height: 900px;
+}
+
+.choix {
+  display: flex;
+  margin-top: 90px;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  align-items: end;
+}
+.choix h1 {
+  font-size: 48px;
+  font-weight: bold;
+  background-color: #92140C;
+  display: inline-block;
+  margin-left: 90px;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+}
+.choix .liens {
+  margin-right: 90px;
+}
+.choix .liens .burger {
+  list-style: none;
+  display: flex;
+  gap: 33px;
+}
+.choix .liens .burger .signature {
+  width: 157px;
+  height: 157px;
+  transition: transform 0.3s ease;
+}
+.choix .liens .burger .signature:hover {
+  transform: scale(1.2);
+}
+.choix .liens .burger .simple {
+  width: 157px;
+  height: 157px;
+  transition: transform 0.3s ease;
+}
+.choix .liens .burger .simple:hover {
+  transform: scale(1.2);
+}
+.choix .liens .burger .poulet {
+  width: 157px;
+  height: 157px;
+  transition: transform 0.3s ease;
+}
+.choix .liens .burger .poulet:hover {
+  transform: scale(1.2);
+}
+.choix .liens .burger .boisson {
+  width: 157px;
+  height: 157px;
+  transition: transform 0.3s ease;
+}
+.choix .liens .burger .boisson:hover {
+  transform: scale(1.2);
+}
+
+.titre {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.titre .sous1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.titre .new {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.the {
+  margin: 55px 150px 60px 150px;
+}
+.the .sout1 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.the .chicken {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.the .chicken .prixthe {
+  display: flex;
+  gap: 30px;
+}
+
+.beef {
+  margin: 55px 150px 60px 150px;
+}
+.beef .sout2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.beef .flette {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.beef .flette .prixla {
+  display: flex;
+  gap: 30px;
+}
+
+.sous2 {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.cheese {
+  margin: 55px 150px 60px 150px;
+}
+.cheese .sout3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.cheese .gin {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.cheese .gin .prixchee {
+  display: flex;
+  gap: 30px;
+}
+
+.ham {
+  margin: 55px 150px 60px 150px;
+}
+.ham .sout4 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.ham .hambur {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ham .hambur .prixham {
+  display: flex;
+  gap: 30px;
+}
+
+.bacon {
+  margin: 55px 150px 60px 150px;
+}
+.bacon .sout5 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.bacon .ba {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.bacon .ba .prixbac {
+  display: flex;
+  gap: 30px;
+}
+
+.bacche {
+  margin: 55px 150px 60px 150px;
+}
+.bacche .sout6 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.bacche .bachee {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.bacche .bachee .prixbc {
+  display: flex;
+  gap: 30px;
+}
+
+.sous3 {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.best {
+  margin: 55px 150px 60px 150px;
+}
+.best .sout7 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.best .bbc {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.best .bbc .prixbest {
+  display: flex;
+  gap: 30px;
+}
+
+.chiba {
+  margin: 55px 150px 60px 150px;
+}
+.chiba .sout8 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.chiba .cb {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.chiba .cb .prixcb {
+  display: flex;
+  gap: 30px;
+}
+
+.spicy {
+  margin: 55px 150px 60px 150px;
+}
+.spicy .sout9 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.spicy .chispi {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.spicy .chispi .prixspi {
+  display: flex;
+  gap: 30px;
+}
+
+.rustique {
+  margin: 55px 150px 60px 150px;
+}
+.rustique .sout10 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.rustique .rust {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.rustique .rust .prixrust {
+  display: flex;
+  gap: 30px;
+}
+
+.bois {
+  margin: 55px 150px 60px 150px;
+}
+.bois .sous4 {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  justify-content: center;
+}
+.bois .boisfri {
+  display: flex;
+  margin-top: 37px;
+}
+.bois .boisfri .potato {
+  width: 50%;
+}
+.bois .boisfri .potato .line1 {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.bois .boisfri .potato .line1 .prixfri {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .potato .line2 {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.bois .boisfri .potato .line2 .prixpot {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .potato .line3 {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.bois .boisfri .potato .line3 .prixfribac {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .potato .line4 {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.bois .boisfri .potato .line4 .prixcrispy {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .coca {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .coca .prixcoca {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .sprite {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .sprite .prixspri {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .orangina {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .orangina .prixoran {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .minute {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .minute .prixminute {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .eau {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .eau .prixo {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+
+.fla {
+  width: 100%;
 }
 
 footer {
   margin: 55px 150px 60px 150px;
-  font-family: Inika;
 }
 footer .cont .tact {
   font-size: 32px;
   font-weight: normal;
-  font-family: Inika;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
@@ -465,8 +536,6 @@ footer .cont .mail {
   font-weight: normal;
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  color: #FFF;
 }
 footer .cont .mail:hover {
   text-decoration: underline;
@@ -477,10 +546,6 @@ footer .infos .forma {
   justify-content: center;
   font-size: 32px;
   font-weight: normal;
-  font-family: Inika;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -492,8 +557,6 @@ footer .infos .liens .faq {
   font-weight: normal;
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  color: #FFF;
   margin-bottom: 10px;
 }
 footer .infos .liens .faq:hover {
@@ -504,8 +567,6 @@ footer .infos .liens .jobs {
   font-weight: normal;
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  color: #FFF;
   margin-bottom: 10px;
 }
 footer .infos .liens .jobs:hover {
@@ -516,8 +577,6 @@ footer .infos .liens .poli {
   font-weight: normal;
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  color: #FFF;
 }
 footer .infos .liens .poli:hover {
   text-decoration: underline;
@@ -527,10 +586,6 @@ footer .follow .fol {
   justify-content: center;
   font-size: 32px;
   font-weight: normal;
-  font-family: Inika;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   margin-top: 40px;
 }
 footer .follow .social {
@@ -539,7 +594,6 @@ footer .follow .social {
   gap: 30px;
   margin-top: 20px;
   align-items: end;
-  color: #FFF;
 }
 footer .follow .social .insta {
   transition: transform 0.3s ease;
@@ -570,190 +624,276 @@ footer .rese {
   font-weight: normal;
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  color: #FFF;
   margin-top: 30px;
 }
 
 @media screen and (max-width: 1024px) {
-  header ul {
-    gap: 80px;
+  .frites {
+    height: 500px;
   }
-  header ul a {
-    font-size: 24px;
-  }
-  header ul img {
-    width: 400px;
-    height: auto;
-  }
-  main {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  main .bestburger h1 {
-    font-size: 90px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-  }
-  main .burg .premburg, main .burg .deuxburg {
-    flex-direction: column;
-    text-align: center;
-  }
-  main .burg .premburg .description, main .burg .deuxburg .description {
-    margin: 40px 0;
-    align-items: center;
-  }
-  main .burg .premburg .description p, main .burg .deuxburg .description p {
-    max-width: 80%;
-  }
-  main .burg .premburg img, main .burg .deuxburg img {
-    width: 80%;
-    height: auto;
-  }
-  main .resto h2 {
-    font-size: 60px;
-  }
-  main .resto .ranger {
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-  footer {
-    margin: 40px 50px;
-  }
-  footer .infos .forma, footer .infos .fol, footer .follow .forma, footer .follow .fol {
-    font-size: 26px;
-  }
-  footer .infos .liens, footer .infos .social, footer .follow .liens, footer .follow .social {
+  .choix {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
   }
-}
-.burger-menu {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35px;
-  height: 25px;
-  cursor: pointer;
-  z-index: 1000;
-}
-.burger-menu .bar {
-  height: 4px;
-  width: 100%;
-  background-color: white;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-.burger-menu.active .bar:nth-child(1) {
-  transform: rotate(45deg) translateY(10px);
-}
-.burger-menu.active .bar:nth-child(2) {
-  opacity: 0;
-}
-.burger-menu.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translateY(-10px);
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-  header {
-    position: relative;
-  }
-  header img {
-    width: 300px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  header .burger-menu {
+  .choix h1 {
+    margin: 0;
     display: flex;
-    position: absolute;
-    top: 20px;
-    right: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
   }
-  header ul {
+  .choix .liens {
+    margin: 0;
+  }
+  .sout1 {
+    display: flex;
+    justify-content: center;
+  }
+  .chicken {
+    display: flex;
+    gap: 30px;
+  }
+  .chicken .point1 {
+    display: none;
+  }
+  .sout2 {
+    display: flex;
+    justify-content: center;
+  }
+  .flette {
+    display: flex;
+    gap: 30px;
+  }
+  .flette .point2 {
+    display: none;
+  }
+  .sout3 {
+    display: flex;
+    justify-content: center;
+  }
+  .gin {
+    display: flex;
+    gap: 30px;
+  }
+  .gin .point3 {
+    display: none;
+  }
+  .sout4 {
+    display: flex;
+    justify-content: center;
+  }
+  .hambur {
+    display: flex;
+    gap: 30px;
+  }
+  .hambur .point4 {
+    display: none;
+  }
+  .sout5 {
+    display: flex;
+    justify-content: center;
+  }
+  .ba {
+    display: flex;
+    gap: 30px;
+  }
+  .ba .point5 {
+    display: none;
+  }
+  .sout6 {
+    display: flex;
+    justify-content: center;
+  }
+  .bachee {
+    display: flex;
+    gap: 30px;
+  }
+  .bachee .point6 {
+    display: none;
+  }
+  .sout7 {
+    display: flex;
+    justify-content: center;
+  }
+  .bbc {
+    display: flex;
+    gap: 30px;
+  }
+  .bbc .point7 {
+    display: none;
+  }
+  .sout8 {
+    display: flex;
+    justify-content: center;
+  }
+  .cb {
+    display: flex;
+    gap: 30px;
+  }
+  .cb .point8 {
+    display: none;
+  }
+  .sout9 {
+    display: flex;
+    justify-content: center;
+  }
+  .chispi {
+    display: flex;
+    gap: 30px;
+  }
+  .chispi .point9 {
+    display: none;
+  }
+  .sout10 {
+    display: flex;
+    justify-content: center;
+  }
+  .rust {
+    display: flex;
+    gap: 30px;
+  }
+  .rust .point10 {
+    display: none;
+  }
+  .bois .boisfri {
+    flex-direction: column;
+  }
+  .bois .boisfri .potato {
+    width: 100%;
+  }
+  .bois .boisfri .potato .line1 {
+    justify-content: center;
+  }
+  .bois .boisfri .potato .line1 .pointfri {
+    display: none;
+  }
+  .bois .boisfri .potato .line2 {
+    justify-content: center;
+  }
+  .bois .boisfri .potato .line2 .pointpo {
+    display: none;
+  }
+  .bois .boisfri .potato .line3 {
+    justify-content: center;
+  }
+  .bois .boisfri .potato .line3 .pointbac {
+    display: none;
+  }
+  .bois .boisfri .potato .line4 {
+    justify-content: center;
+  }
+  .bois .boisfri .potato .line4 .pointcris {
+    display: none;
+  }
+  .bois .boisfri .tr {
+    display: none;
+  }
+  .bois .boisfri .liquide .coca {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .coca .pointco {
+    display: none;
+  }
+  .bois .boisfri .liquide .sprite {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .sprite .pointspri {
+    display: none;
+  }
+  .bois .boisfri .liquide .orangina {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .orangina .pointoran {
+    display: none;
+  }
+  .bois .boisfri .liquide .minute {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .minute .pointmin {
+    display: none;
+  }
+  .bois .boisfri .liquide .eau {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .eau .pointo {
+    display: none;
+  }
+  footer .follow .social {
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    margin-bottom: 0;
+  }
+  header .logo .lbb {
+    width: 500px;
+  }
+  header .navi .res:checked + .mb + .gation {
+    display: flex;
+  }
+  header .navi .mb {
+    display: flex;
+    justify-content: center;
+  }
+  header .navi .gation {
     display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.95);
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    padding: 30px 0;
-    border-top: 1px solid white;
-    transition: all 0.3s ease;
-    z-index: 999;
+    gap: 30px;
   }
-  header ul.active {
-    display: flex;
+  header .frites {
+    height: 400px;
   }
-  main {
-    margin: 0 20px;
+  .choix {
+    margin-top: 50px;
   }
-  main .bestburger h1 {
-    font-size: 60px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  .choix .liens .burger {
+    flex-direction: column;
+    gap: 0;
   }
-  main .soustitre h2 {
-    font-size: 40px;
+  .sign .the {
+    margin-left: 40px;
+    margin-right: 40px;
   }
-  main .burg .premburg, main .burg .deuxburg {
+  .sign .beef {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ori .cheese {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ori .ham {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ori .bacon {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ori .bacche {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .poule .best {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .poule .chiba {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .poule .spicy {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .poule .rustique {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer .follow .social {
     flex-direction: column;
     align-items: center;
-  }
-  main .burg .premburg .description, main .burg .deuxburg .description {
-    margin: 20px 0;
-    text-align: center;
-  }
-  main .burg .premburg .description h3, main .burg .deuxburg .description h3 {
-    font-size: 40px;
-  }
-  main .burg .premburg .description p, main .burg .deuxburg .description p {
-    font-size: 14px;
-  }
-  main .burg .premburg .description button, main .burg .deuxburg .description button {
-    width: 120px;
-    height: 30px;
-  }
-  main .burg .premburg img, main .burg .deuxburg img {
-    width: 90%;
-  }
-  main .resto h2 {
-    font-size: 50px;
-  }
-  main .resto .ranger {
-    flex-direction: column;
-    align-items: center;
-  }
-  main .contact {
-    height: auto;
-  }
-  main .contact .contact-content {
-    gap: 40px;
-  }
-  main .contact .contact-content h2 {
-    font-size: 40px;
-  }
-  main .contact .contact-content button {
-    width: 120px;
-    height: 35px;
-  }
-  footer {
-    margin: 30px;
-    text-align: center;
-  }
-  footer .cont .tact, footer .cont .forma, footer .cont .fol, footer .infos .tact, footer .infos .forma, footer .infos .fol, footer .follow .tact, footer .follow .forma, footer .follow .fol {
-    font-size: 24px;
-  }
-  footer .cont .liens, footer .cont .social, footer .infos .liens, footer .infos .social, footer .follow .liens, footer .follow .social {
-    flex-direction: column;
-    gap: 20px;
-  }
-  footer .cont .mail, footer .cont .faq, footer .cont .jobs, footer .cont .poli, footer .cont .rese, footer .infos .mail, footer .infos .faq, footer .infos .jobs, footer .infos .poli, footer .infos .rese, footer .follow .mail, footer .follow .faq, footer .follow .jobs, footer .follow .poli, footer .follow .rese {
-    font-size: 14px;
+    gap: 30px;
   }
 }/*# sourceMappingURL=menu.css.map */

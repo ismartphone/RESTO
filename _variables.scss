@@ -32,3 +32,65 @@ $border-radius: 8px;
 $line-height: 1.6;
 $letter-spacing-base: 1px;
 $letter-spacing-md: 2px;
+
+
+
+@mixin AnimationBurgers(){
+    width: 157px;
+    height: 157px;
+    transition: transform 0.3s ease;
+}
+
+@mixin TitresBurgers(){
+    font-size: 48px;
+    font-weight: bold;
+}
+
+@mixin SousTitres(){
+    font-size: 32px;
+    font-weight: normal;
+}
+
+@mixin Menus (){
+    display: flex;
+    font-size: 16px;
+    font-weight: normal;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@mixin Prix (){
+    display: flex;
+    gap: 30px;
+}
+
+@mixin FritesBois (){
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+@mixin Footer{
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center; 
+}
+
+@mixin TabMenus (){
+    display: flex;
+    justify-content: center;
+}
+
+@mixin TabIng (){
+    display: flex;
+    gap: 30px;
+}
+
+@mixin TelRes (){
+    margin-left: 40px;
+    margin-right: 40px;
+}
