@@ -1,0 +1,899 @@
+/* ===== VARIABLES ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
+
+* {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Inika", serif;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.navi {
+  position: relative;
+}
+.navi .res {
+  display: none;
+}
+.navi .mb {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  display: none;
+}
+
+.gation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+li {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.accueil:hover {
+  text-decoration: underline;
+}
+
+.menu:hover {
+  text-decoration: underline;
+}
+
+.histoire:hover {
+  text-decoration: underline;
+}
+
+.frites {
+  width: 100%;
+  height: 900px;
+}
+
+.choix {
+  display: flex;
+  margin-top: 90px;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  align-items: end;
+}
+.choix h1 {
+  font-size: 48px;
+  font-weight: bold;
+  background-color: #92140C;
+  display: inline-block;
+  margin-left: 90px;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+}
+.choix .liens {
+  margin-right: 90px;
+}
+.choix .liens .burger {
+  list-style: none;
+  display: flex;
+  gap: 33px;
+}
+.choix .liens .burger .signature {
+  width: 157px;
+  height: 157px;
+  transition: transform 0.3s ease;
+}
+.choix .liens .burger .signature:hover {
+  transform: scale(1.2);
+}
+.choix .liens .burger .simple {
+  width: 157px;
+  height: 157px;
+  transition: transform 0.3s ease;
+}
+.choix .liens .burger .simple:hover {
+  transform: scale(1.2);
+}
+.choix .liens .burger .poulet {
+  width: 157px;
+  height: 157px;
+  transition: transform 0.3s ease;
+}
+.choix .liens .burger .poulet:hover {
+  transform: scale(1.2);
+}
+.choix .liens .burger .boisson {
+  width: 157px;
+  height: 157px;
+  transition: transform 0.3s ease;
+}
+.choix .liens .burger .boisson:hover {
+  transform: scale(1.2);
+}
+
+.titre {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.titre .sous1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.titre .new {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.the {
+  margin: 55px 150px 60px 150px;
+}
+.the .sout1 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.the .chicken {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.the .chicken .prixthe {
+  display: flex;
+  gap: 30px;
+}
+
+.beef {
+  margin: 55px 150px 60px 150px;
+}
+.beef .sout2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.beef .flette {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.beef .flette .prixla {
+  display: flex;
+  gap: 30px;
+}
+
+.sous2 {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.cheese {
+  margin: 55px 150px 60px 150px;
+}
+.cheese .sout3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.cheese .gin {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.cheese .gin .prixchee {
+  display: flex;
+  gap: 30px;
+}
+
+.ham {
+  margin: 55px 150px 60px 150px;
+}
+.ham .sout4 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.ham .hambur {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ham .hambur .prixham {
+  display: flex;
+  gap: 30px;
+}
+
+.bacon {
+  margin: 55px 150px 60px 150px;
+}
+.bacon .sout5 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.bacon .ba {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.bacon .ba .prixbac {
+  display: flex;
+  gap: 30px;
+}
+
+.bacche {
+  margin: 55px 150px 60px 150px;
+}
+.bacche .sout6 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.bacche .bachee {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.bacche .bachee .prixbc {
+  display: flex;
+  gap: 30px;
+}
+
+.sous3 {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.best {
+  margin: 55px 150px 60px 150px;
+}
+.best .sout7 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.best .bbc {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.best .bbc .prixbest {
+  display: flex;
+  gap: 30px;
+}
+
+.chiba {
+  margin: 55px 150px 60px 150px;
+}
+.chiba .sout8 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.chiba .cb {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.chiba .cb .prixcb {
+  display: flex;
+  gap: 30px;
+}
+
+.spicy {
+  margin: 55px 150px 60px 150px;
+}
+.spicy .sout9 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.spicy .chispi {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.spicy .chispi .prixspi {
+  display: flex;
+  gap: 30px;
+}
+
+.rustique {
+  margin: 55px 150px 60px 150px;
+}
+.rustique .sout10 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.rustique .rust {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.rustique .rust .prixrust {
+  display: flex;
+  gap: 30px;
+}
+
+.bois {
+  margin: 55px 150px 60px 150px;
+}
+.bois .sous4 {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  justify-content: center;
+}
+.bois .boisfri {
+  display: flex;
+  margin-top: 37px;
+}
+.bois .boisfri .potato {
+  width: 50%;
+}
+.bois .boisfri .potato .line1 {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.bois .boisfri .potato .line1 .prixfri {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .potato .line2 {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.bois .boisfri .potato .line2 .prixpot {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .potato .line3 {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.bois .boisfri .potato .line3 .prixfribac {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .potato .line4 {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.bois .boisfri .potato .line4 .prixcrispy {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .coca {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .coca .prixcoca {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .sprite {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .sprite .prixspri {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .orangina {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .orangina .prixoran {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .minute {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .minute .prixminute {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+.bois .boisfri .liquide .eau {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+.bois .boisfri .liquide .eau .prixo {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+
+.fla {
+  width: 100%;
+}
+
+footer {
+  margin: 55px 150px 60px 150px;
+}
+footer .cont .tact {
+  font-size: 32px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer .cont .mail {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+}
+footer .cont .mail:hover {
+  text-decoration: underline;
+  color: white;
+}
+footer .infos .forma {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+footer .infos .liens {
+  list-style: none;
+}
+footer .infos .liens .faq {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer .infos .liens .faq:hover {
+  text-decoration: underline;
+}
+footer .infos .liens .jobs {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer .infos .liens .jobs:hover {
+  text-decoration: underline;
+}
+footer .infos .liens .poli {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+}
+footer .infos .liens .poli:hover {
+  text-decoration: underline;
+}
+footer .follow .fol {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 40px;
+}
+footer .follow .social {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  align-items: end;
+}
+footer .follow .social .insta {
+  transition: transform 0.3s ease;
+}
+footer .follow .social .insta:hover {
+  transform: scale(1.1);
+}
+footer .follow .social .face {
+  transition: transform 0.3s ease;
+}
+footer .follow .social .face:hover {
+  transform: scale(1.1);
+}
+footer .follow .social .in {
+  transition: transform 0.3s ease;
+}
+footer .follow .social .in:hover {
+  transform: scale(1.1);
+}
+footer .follow .social .tik {
+  transition: transform 0.3s ease;
+}
+footer .follow .social .tik:hover {
+  transform: scale(1.1);
+}
+footer .rese {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .frites {
+    height: 500px;
+  }
+  .choix {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .choix h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .choix .liens {
+    margin: 0;
+  }
+  .sout1 {
+    display: flex;
+    justify-content: center;
+  }
+  .chicken {
+    display: flex;
+    gap: 30px;
+  }
+  .chicken .point1 {
+    display: none;
+  }
+  .sout2 {
+    display: flex;
+    justify-content: center;
+  }
+  .flette {
+    display: flex;
+    gap: 30px;
+  }
+  .flette .point2 {
+    display: none;
+  }
+  .sout3 {
+    display: flex;
+    justify-content: center;
+  }
+  .gin {
+    display: flex;
+    gap: 30px;
+  }
+  .gin .point3 {
+    display: none;
+  }
+  .sout4 {
+    display: flex;
+    justify-content: center;
+  }
+  .hambur {
+    display: flex;
+    gap: 30px;
+  }
+  .hambur .point4 {
+    display: none;
+  }
+  .sout5 {
+    display: flex;
+    justify-content: center;
+  }
+  .ba {
+    display: flex;
+    gap: 30px;
+  }
+  .ba .point5 {
+    display: none;
+  }
+  .sout6 {
+    display: flex;
+    justify-content: center;
+  }
+  .bachee {
+    display: flex;
+    gap: 30px;
+  }
+  .bachee .point6 {
+    display: none;
+  }
+  .sout7 {
+    display: flex;
+    justify-content: center;
+  }
+  .bbc {
+    display: flex;
+    gap: 30px;
+  }
+  .bbc .point7 {
+    display: none;
+  }
+  .sout8 {
+    display: flex;
+    justify-content: center;
+  }
+  .cb {
+    display: flex;
+    gap: 30px;
+  }
+  .cb .point8 {
+    display: none;
+  }
+  .sout9 {
+    display: flex;
+    justify-content: center;
+  }
+  .chispi {
+    display: flex;
+    gap: 30px;
+  }
+  .chispi .point9 {
+    display: none;
+  }
+  .sout10 {
+    display: flex;
+    justify-content: center;
+  }
+  .rust {
+    display: flex;
+    gap: 30px;
+  }
+  .rust .point10 {
+    display: none;
+  }
+  .bois .boisfri {
+    flex-direction: column;
+  }
+  .bois .boisfri .potato {
+    width: 100%;
+  }
+  .bois .boisfri .potato .line1 {
+    justify-content: center;
+  }
+  .bois .boisfri .potato .line1 .pointfri {
+    display: none;
+  }
+  .bois .boisfri .potato .line2 {
+    justify-content: center;
+  }
+  .bois .boisfri .potato .line2 .pointpo {
+    display: none;
+  }
+  .bois .boisfri .potato .line3 {
+    justify-content: center;
+  }
+  .bois .boisfri .potato .line3 .pointbac {
+    display: none;
+  }
+  .bois .boisfri .potato .line4 {
+    justify-content: center;
+  }
+  .bois .boisfri .potato .line4 .pointcris {
+    display: none;
+  }
+  .bois .boisfri .tr {
+    display: none;
+  }
+  .bois .boisfri .liquide .coca {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .coca .pointco {
+    display: none;
+  }
+  .bois .boisfri .liquide .sprite {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .sprite .pointspri {
+    display: none;
+  }
+  .bois .boisfri .liquide .orangina {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .orangina .pointoran {
+    display: none;
+  }
+  .bois .boisfri .liquide .minute {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .minute .pointmin {
+    display: none;
+  }
+  .bois .boisfri .liquide .eau {
+    justify-content: center;
+  }
+  .bois .boisfri .liquide .eau .pointo {
+    display: none;
+  }
+  footer .follow .social {
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    margin-bottom: 0;
+  }
+  header .logo .lbb {
+    width: 500px;
+  }
+  header .navi .res:checked + .mb + .gation {
+    display: flex;
+  }
+  header .navi .mb {
+    display: flex;
+    justify-content: center;
+  }
+  header .navi .gation {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+  }
+  header .frites {
+    height: 400px;
+  }
+  .choix {
+    margin-top: 50px;
+  }
+  .choix .liens .burger {
+    flex-direction: column;
+    gap: 0;
+  }
+  .sign .the {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .sign .beef {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ori .cheese {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ori .ham {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ori .bacon {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .ori .bacche {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .poule .best {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .poule .chiba {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .poule .spicy {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .poule .rustique {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer .follow .social {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=menu.css.map */
