@@ -1,0 +1,365 @@
+
+@import "./variables";
+@import "./exercice";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-dark;
+  line-height: $line-height;
+}
+
+/* navigation */
+nav {
+  background-color: $color-black;
+  padding: $spacing-lg 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  ul {
+    list-style: none;
+    @include flex-center;
+    gap: $spacing-3xl;
+  }
+
+  a {
+    @include link-style;
+    font-size: $font-size-sm;
+    font-weight: normal;
+    letter-spacing: $letter-spacing-md;
+    text-transform: uppercase;
+  }
+}
+
+.logo {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+    img,
+    svg {
+      display: inline-block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* smaller cap on very small screens (optional) */
+    @include responsive-grid-480 {
+      max-width: 320px;
+    }
+  }
+
+
+/* ===== HEADER LOGO ===== */
+.header-logo {
+  text-align: center;
+  padding: $spacing-lg 0;
+  font-size: $font-size-h1;
+  color: $color-primary;
+}
+
+/* h numero */
+
+h1 {
+  text-align: center;
+  @include heading-style($font-size-h1, $letter-spacing-md, $spacing-2xl);
+}
+
+h2 {
+  text-align: center;
+  @include heading-style($font-size-h2, $letter-spacing-base, $spacing-xl);
+}
+
+h3 {
+  font-size: $font-size-h3;
+  font-weight: bold;
+  margin: $spacing-lg 0 $spacing-sm 0;
+  text-transform: uppercase;
+}
+
+/* containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-2xl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* who are we */
+.who-are-we {
+  @include grid-layout(1fr 1fr);
+  align-items: start;
+  margin: $spacing-3xl 0;
+}
+
+.who-are-we-text {
+  @include text-style;
+
+  p {
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.fondateur-card {
+  @include card-style;
+}
+
+.fondateur-image {
+  width: 150px;
+  height: 150px;
+  background: $color-medium-gray;
+  border-radius: 50%;
+  margin: 0 auto $spacing-lg;
+  @include flex-center;
+  color: $color-gray;
+  font-size: $font-size-sm;
+}
+
+.fondateur-name {
+  font-size: $font-size-title;
+  font-weight: bold;
+  margin: $spacing-sm 0 $spacing-xs 0;
+}
+
+.fondateur-title {
+  font-size: $font-size-sm;
+  color: $color-dark-gray;
+}
+
+/* our concept */
+.our-concept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $spacing-3xl 0;
+  gap: 40px;
+}
+
+.concept-map {
+  @include flex-center;
+  max-width: 600px;  
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.concept-text {
+  @include text-style;
+
+  p {
+    margin-bottom: $spacing-md;
+  }
+}
+
+/* hero banner */
+.hero-banner {
+  width: 100%;
+  height: 100%;
+  background: $color-medium-gray;
+  margin: $spacing-2xl calc(-50vw + 50%);
+  @include flex-center;
+  color: $color-gray;
+  font-size: $font-size-sm;
+}
+
+/* texas spirit */
+.texas-spirit-text {
+  max-width: 900px;
+  margin: $spacing-3xl auto;
+  @include text-style;
+}
+
+.food-gallery {
+  @include grid-layout(repeat(3, 1fr), $spacing-lg);
+  margin: $spacing-2xl 0 $spacing-3xl 0;
+}
+
+.gallery-item {
+  width: 100%;
+  @include placeholder-box(100%);
+}
+
+/* menu button */
+.menu-button {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn {
+  @include button-style;
+}
+
+/* addresses */
+.addresses {
+  max-width: 1000px;
+  margin: $spacing-3xl 0;
+}
+
+.address-maps {
+  background: #ddd;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 13px;
+  align-items: center;
+  width: 100%
+}
+
+.address-grid {
+  @include flex-center();
+  align-items: flex-start;
+  margin: $spacing-2xl 0;
+  gap: 20px;
+}
+
+.address-card {  
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  width: 33%;
+}
+
+.address-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: $color-primary;
+  margin: $spacing-lg 0 $spacing-md 0;
+  text-transform: uppercase;
+}
+
+.address-details {
+  @include text-style($font-size-sm, 1.8, center);
+
+  p {
+    margin: $spacing-xs 0;
+  }
+}
+
+.address-phone {
+  font-weight: bold;
+  color: $color-dark;
+}
+
+.address-hours {
+  font-size: $font-size-sm;
+  color: $color-dark-gray;
+  margin-top: $spacing-md;
+}
+
+/* footer */
+footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding: $spacing-3xl $spacing-2xl;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.footer-section {
+  margin: $spacing-xl 0;
+}
+
+.footer-title {
+  font-size: $font-size-sm;
+  font-weight: bold;
+  letter-spacing: $letter-spacing-base;
+  text-transform: uppercase;
+  margin-bottom: $spacing-md;
+}
+
+.footer-content {
+  @include text-style($font-size-xs);
+}
+
+.footer-links {
+  @include flex-center;
+  gap: $spacing-xl;
+  margin: $spacing-sm 0;
+
+
+  a {
+    @include link-style($color-white, $color-primary);
+    font-size: $font-size-xs;
+  }
+}
+
+.social-links {
+  @include flex-center-gap($spacing-lg);
+  margin: $spacing-lg 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    @include link-style($color-white, $color-primary);
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid $color-border-gray;
+  padding-top: $spacing-lg;
+  margin-top: $spacing-2xl;
+  font-size: $font-size-xs;
+}
+
+/* responsive */
+@include responsive-grid-768 {
+  .who-are-we,
+  .address-grid {
+    @include grid-layout(1fr);
+  }
+
+  .food-gallery {
+    @include grid-layout(repeat(2, 1fr), $spacing-lg);
+  }
+
+  nav ul {
+    gap: $spacing-xl;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    padding: 0 $spacing-md;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  .our-concept {
+    flex-direction: column
+  }
+}
+
+@include responsive-grid-480 {
+  .food-gallery,
+  .address-grid {
+    @include grid-layout(1fr);
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+}

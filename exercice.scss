@@ -1,0 +1,89 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-gap($gap) {
+  @include flex-center;
+  gap: $gap;
+}
+
+@mixin grid-layout($columns, $gap: $spacing-2xl) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;  
+}
+
+@mixin heading-style($size, $letter-spacing: 0, $margin-bottom: 0) {
+  font-size: $size;
+  font-weight: normal;
+  margin: $spacing-3xl 0 $margin-bottom 0;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+}
+
+@mixin text-style($size: $font-size-base, $line-height: 1.8, $align: justify, $color: inherit) {
+  font-size: $size;
+  line-height: $line-height;
+  text-align: $align;
+  color: $color;
+}
+
+@mixin card-style($padding: $spacing-xl, $radius: $border-radius) {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@mixin placeholder-box($height) {
+  background: transparent;
+  height: $height;
+  border-radius: $border-radius;
+  @include flex-center;
+  font-size: $font-size-sm;
+}
+
+@mixin link-style($color: $color-white, $hover-color: $color-primary) {
+  color: $color;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@mixin button-style($bg: $color-btn-dark, $hover-bg: $color-primary, $padding: 15px 60px) {
+  background-color: $bg;
+  color: $color-white;
+  padding: $padding;
+  text-decoration: none;
+  font-size: $font-size-title;
+  font-weight: bold;
+  letter-spacing: $letter-spacing-base;
+  border-radius: 4px;
+  display: inline-block;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+}
+
+@mixin responsive-grid-768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin responsive-grid-480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
